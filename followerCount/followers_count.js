@@ -1,14 +1,23 @@
 let count = 0;
 
 function increaseCount() {
-    count++; // Increment the count by 1
+    count++; 
     displayCount(); // Display the count
     checkCountValue(); // Check count value and display messages
   }
-
+    function resetCount() {
+    document.getElementById('countDisplay').innerHTML= 0; 
+    }
+    
+  function reset() {
+    resetCount();
+    alert("Followers count has been reset.")
+  }
 function displayCount() {
     document.getElementById('countDisplay').innerHTML=count; // Display the count in the HTML
     }
+
+
 
 function checkCountValue() {
         if (count === 10) {
